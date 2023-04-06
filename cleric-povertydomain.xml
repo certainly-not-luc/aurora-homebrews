@@ -144,6 +144,11 @@
             <p>Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.</p>
             <p class="indent">Moreover, you are always under the effects of sanctuary. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest.</p>
         </description>
+        <sheet>
+            <description>
+            <p>Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.</p>
+            </description>
+        </sheet>
     </element>
 
 </elements>
