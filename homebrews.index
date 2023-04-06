@@ -9,5 +9,6 @@
 	</info>
 	<files>
 		<file name="cleric-blooddomain.xml" url="https://raw.githubusercontent.com/certainly-not-luc/aurora-homebrews/main/cleric-blooddomain.xml" />
+		<file name="cleric-povertydomain.xml" url="https://raw.githubusercontent.com/certainly-not-luc/aurora-homebrews/main/cleric-povertydomain.xml" />
 	</files>
 </index>
