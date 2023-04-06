@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Poverty Domain</name>
+        <description>The Poverty Domain from algum lugar da internet I guess</description>
+        <update version="1.0">
+            <file name="cleric-povertydomain.xml" url="" />
+        </update>
+    </info>
+    <element name="Poverty Domain" type="Archetype" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_CLERIC_POVERTY_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>
+                Deities of the Poverty Domain value quality of devotion over quantity and have strict requirements for their Clerics. They are required to give up all material possessions beyond basic necessities. Usually, Clerics of Poverty are only armed with a quarterstaff and carry only a small amount of food and water and a cloak on their back. These fervently devout Clerics are bound by divine law to seek peace above all, resorting to violence only when all other options have been exhausted.
+            </p>
+
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_BONUS_PROFICIENCIES" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_DOMAIN_SPELLS" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_MANTLE_OF_POVERTY" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_CD_GUARDIANS_SHIELD" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_WARRIOR_OF_MERCY" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_DIVINE_STRIKE" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_ASCETIC_MASTER" />
+        </description>
+        <sheet>
+            <description>
+                Usually, Clerics of Poverty are only armed with a quarterstaff and carry only a small amount of food and water and a cloak on their back.
+            </description>
+            <rules>
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_DOMAIN_SPELLS" level="1" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_MANTLE_OF_POVERTY" level="1" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_CD_GUARDIANS_SHIELD" level="2" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_WARRIOR_OF_MERCY" level="6" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_DIVINE_STRIKE" level="8" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_ASCETIC_MASTER" level="17" />
+            </rules>
+        </sheet>
+    </element>
+
+
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_BONUS_PROFICIENCIES">
+        <description>
+            <p>
+                You are blessed with supernatural insight into the hearts of others, so that you may avoid violence at all costs. You gain proficiency in Insight, and you add double your proficiency bonus to any Wisdom (Insight) checks that you make.
+            </p>
+        </description>
+        <sheet display="true" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <stat name="insight:proficiency" bonus="double"/>
+        </rules>
+    </element>
+
+    <element name="Domain Spells" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_DOMAIN_SPELLS">
+        <description>
+            <p>
+                You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.
+            </p>
+            <h5>Blood Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Cleric Level</td><td>Spells</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1st</td><td><em>sanctuary, sleep</em></td></tr>
+                    <tr><td>3rd</td><td><em>hold person, ray of enfeeblement</em></td></tr>
+                    <tr><td>5th</td><td><em>hypnotic pattern, slow</em></td></tr>
+                    <tr><td>7th</td><td><em>death ward, resilient sphere</em></td></tr>
+                    <tr><td>9th</td><td><em>hold monster, wall of force</em></td></tr>
+                </tbody>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_RESILIENT_SPHERE" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Mantle of Poverty" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_MANTLE_OF_POVERTY">
+        <description>
+            <p>As a devout follower of the way of Poverty, your god has blessed you with a special measure of protection against bodily harm. So long as you are not wearing armor, using a shield, and are wielding only a simple weapon (such as a quarterstaff or club), your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier.</p>
+        </description>
+
+        <rules>
+            <stat name="ac:unarmored defense mantle_of_poverty:base" value="10" />
+			<stat name="ac:unarmored defense mantle_of_poverty:dexterity" value="wisdom:modifier" />
+			<stat name="ac:unarmored defense mantle_of_poverty:constitution" value="constitution:modifier" />
+
+			<stat name="ac:unarmored defense mantle_of_poverty" value="ac:unarmored defense mantle_of_poverty:base" />
+			<stat name="ac:unarmored defense mantle_of_poverty" value="ac:unarmored defense mantle_of_poverty:dexterity" />
+			<stat name="ac:unarmored defense mantle_of_poverty" value="ac:unarmored defense mantle_of_poverty:constitution" />
+
+			<stat name="ac:calculation" value="ac:unarmored defense mantle_of_poverty" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Mantle of Poverty)" />
+        </rules>
+    </element>
+
+    <element name="Channel Divinity: Guardian's Shield" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_CD_GUARDIANS_SHIELD">
+        <description>
+            <p>When a creature you can see within 30 feet takes damage, you can use your reaction to clutch your holy symbol and invoke this Channel Divinity. You then take the full damage of the triggering attack but are considered to be resistant to any damage you take during this reaction.</p>
+        </description>
+        <sheet alt="Guardian's Shield" action="Reaction" usage="Channel Divinity">
+            <description>When a creature you can see within 30 feet takes damage, you can use your reaction to clutch your holy symbol and take the damage in it's stead. You are considered to be resistant to any damage you take during this reaction.</description>
+        </sheet>
+    </element>
+
+    <element name="Sanguine Rebuke" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_WARRIOR_OF_MERCY">
+        <description>
+            <p>You can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.</p>
+            <p class="indent">Instead of falling unconscious, the creature falls to 1 hit point and is charmed for 10 minutes. It is docile and will refuse to do anything unless you use a bonus action to command it. You cannot order it to attack, cast a spell, or cause damage of any kind. This effect ends early if the charmed creature takes damage. If it still has hit points remaining when the effect ends the creature falls unconscious.</p>
+            <p class="indent">Once you use this feature you must finish a short or long rest before you can use it again.</p>
+        </description>
+        <sheet>
+            <description>When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it. (1/short or long rest)</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Strike" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_DIVINE_STRIKE">
+        <description>
+            <p>Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 radiant damage to the target.</p>
+            <p class="indent">At 14th level, the extra radiant damage increases to 2d8.</p>
+        </description>
+        <sheet>
+			<description>Once on each of your turns +1d8 radiant damage with a weapon attack.</description>
+			<description level="14">Once on each of your turns +2d8 radiant damage with a weapon attack.</description>
+		</sheet>
+    </element>
+
+    <element name="Ascetic Master" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_POVERTY_DOMAIN_ASCETIC_MASTER">
+        <description>
+            <p>Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.</p>
+            <p class="indent">Moreover, you are always under the effects of sanctuary. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest.</p>
+        </description>
+		</sheet>
+    </element>
+
+</elements>
