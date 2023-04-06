@@ -149,6 +149,11 @@
             <p>Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.</p>
             </description>
         </sheet>
+        <rules>
+            <stat name="resistance:bludgeoning" />
+			<stat name="resistance:piercing" />
+			<stat name="resistance:slashing" />
+        </rules>
     </element>
 
 </elements>
