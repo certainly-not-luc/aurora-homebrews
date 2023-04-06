@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Blood Domain</name>
+        <description>The Blood Domain from algum lugar da internet I guess</description>
+        <update version="1.0">
+            <file name="cleric-blooddomain.xml" url="" />
+        </update>
+    </info>
+    <element name="Blood Domain" type="Archetype" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_CLERIC_BLOOD_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>
+                Clerics that serve gods of this Domain draw upon the power of life-blood to perform great and terrible feats. When tere are no creatures from which to draw blood, these Clerics must sacrifice their own vitality to work their magic. Blood Clerics often serve gods that revel in suffering, but some wield this ancient power to serve noble ends.
+            </p>
+
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_PROFICIENCIES" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DOMAIN_SPELLS" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BLOODWELL" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_BLOOD_CURSE" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SANGUINE_REBUKE" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DIVINE_STRIKE" />
+            <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_VAMPIRIC_MASTERY" />
+        </description>
+        <sheet>
+            <description>
+                Clerics that serve gods of this Domain draw upon the power of life-blood to perform great and terrible feats. Blood Clerics often serve gods that revel in suffering, but some wield this ancient power to serve noble ends.
+            </description>
+            <rules>
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DOMAIN_SPELLS" level="1" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BLOODWELL" level="1" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_BLOOD_CURSE" level="2" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SANGUINE_REBUKE" level="6" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DIVINE_STRIKE" level="8" />
+                <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_VAMPIRIC_MASTERY" level="17" />
+            </rules>
+        </sheet>
+    </element>
+
+
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_PROFICIENCIES">
+        <description>
+            <p>
+                Clerics of the Blood Domain are familiar with implements of all sorts that draw blood. You gain proficiency with all martial weapons that deal either slashing or piercing damage.
+            </p>
+        </description>
+        <sheet display="true" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
+            <grant type="Proficiency" id="ID_WOTC_PHB_WEAPON_ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERDHALBERD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK" />
+        </rules>
+    </element>
+
+    <element name="Domain Spells" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DOMAIN_SPELLS">
+        <description>
+            <p>
+                You always have the spells from the table below prepared once you reach certain levels in this class. See the Divine Domain class feature for how Domain Spells work.
+            </p>
+            <h5>Blood Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Cleric Level</td><td>Spells</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1st</td><td><em>inflict wounds, ray of sickness</em></td></tr>
+                    <tr><td>3rd</td><td><em>hold person, ray of enfeeblement</em></td></tr>
+                    <tr><td>5th</td><td><em>bestow curse, vampiric touch</em></td></tr>
+                    <tr><td>7th</td><td><em>blight, dominate beast</em></td></tr>
+                    <tr><td>9th</td><td><em>dominate person, hold monster</em></td></tr>
+                </tbody>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Bloodwell" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BLOODWELL">
+        <description>
+            <p>When you draw blood you can channel it into a sinister ward, known as a Bloodwell. Whenever you deal necrotic, piercing, or slashing damage to a creature with blood in its veins, your Bloodwell ganis hit points equal to half the damage you dealt to the creature. Whenever you take damage, your Bloodwell takes the damage first, and if it is reduced to 0 hit points, you take any remaining damage.</p>
+            <p class="indent">Your Bloodwell can have a maximum number of hit points equal to your Wisdom modifier + your Cleric level</p>
+            <p class="indent">You can sacrifice your own life to fuel your Bloodwell. As a bonus action, you can expend a Hit Die to add hit points to your Bloodwell equal to 1d8 + your Wisdom modifier.</p>
+        </description>
+    </element>
+
+    <element name="Channel Divinity: Blood Curse" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_BLOOD_CURSE">
+        <description>
+            <p>As an action, you can grasp your holy simbol and force a target within 60 feet to make a Constitution saving throw, so long as it has blood in its veins. Ona  failure, it is restrained for 1 minute as its blood congeals in its body.</p>
+            <p class="indent">A restrained creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p>
+        </description>
+        <sheet alt="Blood Curse" action="Action" usage="Channel Divinity">
+            <description>Choose one creature you can see which contains blood in its veins within 60 feet. The creature must make a Constitution saving throw or be restrained for 1 minute as its blood congeals in its body. A restrained creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</description>
+        </sheet>
+    </element>
+
+    <element name="Sanguine Rebuke" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SANGUINE_REBUKE">
+        <description>
+            <p>Your Bloodwell rebukes those who dare to strike you. When a creature deals damage to your Bloodwell with a melee attack, you can use a reaction to force it to make a Dexterity saving throw. On a failed save, it takes 2d10 necrotic damage.</p>
+            <p class="indent">You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When a creature deals damage to your Bloodwell with a melee attack, you can use a reaction to force it to make a Dexterity saving throw. On a failed save, it takes 2d10 necrotic damage. ({{wisdom:modifier}}/day)</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Strike" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DIVINE_STRIKE">
+        <description>
+            <p>Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 necrotic damage to the target.</p>
+            <p class="indent">At 14th level, the etra necrotic damage increases to 2d8.</p>
+        </description>
+        <sheet>
+			<description>Once on each of your turn +1d8 necrotic damage with a weapon attack.</description>
+			<description level="14">Once on each of your turn +2d8 necrotic damage with a weapon attack.</description>
+		</sheet>
+    </element>
+
+    <element name="Vampiric Mastery" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_VAMPIRIC_MASTERY">
+        <description>
+            <p>You can draw power from death. When you kill a creature with a necromancy spell of 2nd-level or higher, you can use your reaction to regain one of your expended spell slots.</p>
+            <p class="indent">The spell slot you recover must be at least one level lower than the spell you cast to kill the creature.</p>
+        </description>
+        <sheet action="Reaction">
+			<description>When you kill a creature with a necromancy spell of 2nd-level or higher, use your reaction to regain a spell slot at least one level lower than the spell you cast to kill the creature.</description>
+		</sheet>
+    </element>
+
+</elements>

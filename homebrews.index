@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Homebrews</name>
+		<description>List of homebrew options for Aurora 5e Character Sheet Builder</description>
+		<update version="1.0">
+			<file name="homebrews.index" url="https://raw.githubusercontent.com/helpitsagain/AuroraHomebrews/master/homebrews.index" />
+		</update>
+	</info>
+	<files>
+		<file name="cleric-blooddomain.xml" url="https://raw.githubusercontent.com/helpitsagain/AuroraHomebrews/master/cleric-blooddomain.xml" />
+	</files>
+</index>
