@@ -133,11 +133,11 @@
     <element name="Divine Strike" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_FEATURE_BLOOD_DOMAIN_DIVINE_STRIKE">
         <description>
             <p>Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 necrotic damage to the target.</p>
-            <p class="indent">At 14th level, the etra necrotic damage increases to 2d8.</p>
+            <p class="indent">At 14th level, the extra necrotic damage increases to 2d8.</p>
         </description>
         <sheet>
-			<description>Once on each of your turn +1d8 necrotic damage with a weapon attack.</description>
-			<description level="14">Once on each of your turn +2d8 necrotic damage with a weapon attack.</description>
+			<description>Once on each of your turns +1d8 necrotic damage with a weapon attack.</description>
+			<description level="14">Once on each of your turns +2d8 necrotic damage with a weapon attack.</description>
 		</sheet>
     </element>
 
